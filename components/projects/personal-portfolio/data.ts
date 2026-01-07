@@ -2,7 +2,7 @@ export const personalPortfolioData = {
   title: 'Personal Portfolio',
   description: 'A modern, responsive portfolio website showcasing my projects and skills. Built with Next.js 15, TypeScript, and Tailwind CSS with a clean component-based architecture.',
   tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-  image: '/images/personalPfp.jpg',
+  image: '/portfolio/images/personalPfp.jpg',
   architecture: {
     tldr: {
       overview: 'Modern portfolio website built with Next.js 15 App Router and TypeScript. Designed with a modular, component-based architecture that separates shared components from project-specific implementations, enabling easy maintenance and scalability.',

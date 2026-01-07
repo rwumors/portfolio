@@ -13,7 +13,6 @@ const nextConfig = {
   },
   // Set basePath for GitHub Pages (repo name is 'portfolio')
   basePath: '/portfolio',
-  assetPrefix: '/portfolio',
   trailingSlash: true,
 };
 

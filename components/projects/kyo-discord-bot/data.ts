@@ -2,7 +2,7 @@ export const kyoDiscordBotData = {
   title: 'Kyo Discord Bot',
   description: 'A powerful Discord bot built with TypeScript, featuring Supabase as the backend/database and hosted on Digital Ocean.',
   tech: ['TypeScript', 'Supabase', 'Digital Ocean'],
-  image: '/images/kyoPfp.png',
+  image: '/portfolio/images/kyoPfp.png',
   stats: {
     shard: '0 - Current',
     latency: '38ms',
