@@ -23,7 +23,7 @@ export default function About() {
             <span className="accent-green">AIZ</span>
           </h4>
           <p className="text-sm leading-relaxed opacity-80 mb-6 max-w-2xl">
-            As a Full Stack Developer, I specialize in building scalable applications from the ground up. I'm passionate about clean code, modern architecture, and creating seamless user experiences. My expertise spans across the entire development stack, from database design to frontend interfaces.
+            As a Full Stack Developer, I specialize in building scalable applications from the ground up. I&apos;m passionate about clean code, modern architecture, and creating seamless user experiences. My expertise spans across the entire development stack, from database design to frontend interfaces.
           </p>
           <button className="border border-white px-6 py-2 text-sm uppercase tracking-wider hover:bg-white hover:text-black transition-colors">
             LEARN MORE
@@ -33,7 +33,7 @@ export default function About() {
       
       {/* Testimonial Section */}
       <div className="flex flex-col justify-center">
-        <div className="text-9xl font-serif text-white/20 mb-8">"</div>
+        <div className="text-9xl font-serif text-white/20 mb-8">&quot;</div>
         <p className="text-2xl font-bold leading-relaxed mb-8">
           EXCELLENT WORK ON THE PROJECT. <span className="accent-green">HIGH QUALITY CODE!</span>
         </p>

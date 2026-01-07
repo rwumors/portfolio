@@ -2,12 +2,12 @@ export default function Hero() {
   return (
     <div className="relative">
         <div className="mb-6">
-          <h2 className="text-4xl font-bold accent-green mb-8">HI, I'M AIZ!</h2>
+          <h2 className="text-4xl font-bold accent-green mb-8">HI, I&apos;M AIZ!</h2>
           <h1 className="text-6xl md:text-7xl font-bold leading-tight mb-6">
             BUILDING SCALABLE AND EFFICIENT FULL-STACK APPLICATIONS
           </h1>
           <p className="text-lg opacity-80 max-w-lg">
-            I'm a Full Stack Developer passionate about creating robust, scalable solutions with modern technologies.
+            I&apos;m a Full Stack Developer passionate about creating robust, scalable solutions with modern technologies.
           </p>
         </div>
         

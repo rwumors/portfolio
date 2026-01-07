@@ -8,8 +8,8 @@ import { kyoSocialPlatformData } from './data';
 interface KyoSocialPlatformProps {
   isExpanded: boolean;
   onToggle: () => void;
-  activeTab: 'features' | 'screenshots';
-  onTabChange: (tab: 'features' | 'screenshots') => void;
+  activeTab: 'features' | 'screenshots' | 'architecture';
+  onTabChange: (tab: 'features' | 'screenshots' | 'architecture') => void;
 }
 
 export default function KyoSocialPlatform({ isExpanded, onToggle, activeTab, onTabChange }: KyoSocialPlatformProps) {
