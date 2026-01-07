@@ -11,9 +11,9 @@ const nextConfig = {
       },
     ],
   },
-  // If your repo name is not the root, uncomment and set basePath
-  // basePath: '/your-repo-name',
-  // trailingSlash: true,
+  // Set basePath for GitHub Pages (repo name is 'portfolio')
+  basePath: '/portfolio',
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
