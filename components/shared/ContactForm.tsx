@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 
 interface ContactFormProps {
   onClose: () => void;
@@ -14,6 +15,16 @@ export default function ContactForm({ onClose }: ContactFormProps) {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    // Prevent body scroll when modal is open
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
 
   const handleSubmit = useCallback(async (e: React.FormEvent) => {
     e.preventDefault();
@@ -89,7 +100,7 @@ export default function ContactForm({ onClose }: ContactFormProps) {
     }));
   }, []);
 
-  return (
+  const modalContent = (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
       {/* Overlay */}
       <div 
@@ -98,7 +109,7 @@ export default function ContactForm({ onClose }: ContactFormProps) {
       />
       
       {/* Modal */}
-      <div className="relative bg-[#1a1a1a] border border-gray-700 rounded-lg p-8 w-full max-w-md">
+      <div className="relative bg-[#1a1a1a] border border-gray-700 rounded-lg p-8 w-full max-w-md z-[10000]">
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"
@@ -198,5 +209,9 @@ export default function ContactForm({ onClose }: ContactFormProps) {
       </div>
     </div>
   );
+
+  if (!mounted) return null;
+
+  return createPortal(modalContent, document.body);
 }
 
