@@ -90,10 +90,10 @@ export default function ContactForm({ onClose }: ContactFormProps) {
   }, []);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
       {/* Overlay */}
       <div 
-        className="absolute inset-0 bg-black/80"
+        className="absolute inset-0 bg-black/80 backdrop-blur-sm"
         onClick={onClose}
       />
       
