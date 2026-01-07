@@ -2,7 +2,7 @@ export const kyoSocialPlatformData = {
   title: 'Kyo Social Platform',
   description: 'A modern social platform with customizable profiles, music playlists, and image albums. Built with Next.js 15 and self-hosted Supabase.',
   tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-  image: '/portfolio/images/kyoSocial.webp',
+  image: '/images/kyoSocial.webp',
   screenshots: [
     // Add your screenshot URLs here
     // Example: '/images/social-platform-1.png',

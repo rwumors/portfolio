@@ -11,8 +11,7 @@ const nextConfig = {
       },
     ],
   },
-  // Set basePath for GitHub Pages (repo name is 'portfolio')
-  basePath: '/portfolio',
+  // Custom domain - no basePath needed
   trailingSlash: true,
 };
 
